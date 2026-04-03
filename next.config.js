@@ -1,0 +1,14 @@
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    domains: ['localhost', 'i.imgur.com', 'cdn.discordapp.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
+  },
+}
+
+module.exports = nextConfig
